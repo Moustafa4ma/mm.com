@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'open sans', sans-serif;
+}
+
+.body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #eee;
+
+
+}
+
+.fa-caret-up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 30px;
+    color: #2eaf7a;
+    z-index: 3;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(131deg, #02353c, #2eaf7a, #2eaf7a, #3fd0c9, #c1f6ed);
+    ;
+}
+
+.container {
+    width: 100%;
+    padding: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 5;
+}
+
+.logo {
+    display: flex;
+    letter-spacing: 5px;
+    font-size: 20px;
+    color: #02353c;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.nav a {
+    text-decoration: none;
+    margin: 10px;
+    font-size: 13px;
+    color: #222;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.nav a::after {
+    content: "";
+    background-color: #c1f6ed;
+    width: 0;
+    height: 3px;
+    border-radius: 20px;
+    display: block;
+    transition: 0.5s;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.landing {
+    background-color: #02353c49;
+    width: 90%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 16px;
+    z-index: 2;
+    color: #02353c;
+    font-weight: 800;
+    text-transform: capitalize;
+    position: absolute;
+    left: 0;
+    top: 150px;
+}
+
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.intro img {
+    width: 300px;
+    height: 300px;
+}
+
+.intro .text a {
+    background: linear-gradient(to left, #c1f6edc9, #2eaf7a, #0b935a);
+    padding: 10px;
+    color: #02353c;
+    border-radius: 15px;
+    text-decoration: none;
+    border: 1px solid #02353c;
+    transition: 0.5s;
+}
+
+.intro .text a:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    color: #aaa;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+}
+
+.serve {
+    padding: 0 10px;
+    font-size: 20px;
+    color: #02353c;
+}
+
+.serve .fa-solid {
+    font-size: 30px;
+    margin: 10px;
+    background-image: linear-gradient(to right, #0b935a, #3fd0c9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+    padding: 20px;
+}
+
+.portfolio .projects {
+    width: 300px;
+    border: 1px solid #aaa;
+    padding: 0 10px 10px 10px;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.portfolio .projects img {
+    width: 300px;
+    height: 300px;
+}
+
+.feed {
+    margin: 20px;
+}
+
+.feed h1 {
+    color: #444;
+}
+
+.feedbacks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prof-img {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #2eaf7a;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+
+}
+
+.comment {
+    background-color: #d2d2d2;
+    border-radius: 15px;
+    padding: 10px;
+    display: inline-block;
+    text-transform: capitalize;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.form-container input[type=text] {
+    padding: 10px;
+    width: 300px;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid #444;
+    margin-bottom: 20px;
+}
+
+.form-container input[type=text]:focus {
+    border: 1px solid #0b935a;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container input[type=submit] {
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: white;
+    background: linear-gradient(60deg, #0b935a, #2eaf7a);
+
+}
+
+
+.footer {
+    width: 100%;
+    background: linear-gradient(131deg, #02353c, #2eaf7a, #2eaf7a, #3fd0c9, #c1f6ed);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.footer h1 {
+    color: #02353c;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #02353c;
+    margin: 15px;
+}
+
+
+
+@media (min-width:576px) {
+    .container {
+        width: 540px;
+    }
+
+    .landing {
+        height: 150px;
+        width: 50%;
+        line-height: 150px;
+        font-size: 20px;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+
+    .serve {
+        padding: 0 20px;
+    }
+
+    .portfolio {
+        flex-direction: row;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 720px;
+    }
+
+    .landing {
+        height: 150px;
+        width: 50%;
+        line-height: 150px;
+        font-size: 20px;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+
+    .intro img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .serve {
+        padding: 0 40px;
+    }
+
+    .portfolio {
+        flex-direction: row;
+    }
+}
+
+@media (min-width:1024px) {
+    .container {
+        width: 960px;
+    }
+
+    .landing {
+        height: 150px;
+        width: 50%;
+        line-height: 150px;
+        font-size: 20px;
+    }
+
+    .intro img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+
+    .serve {
+        padding: 0 40px;
+    }
+
+    .portfolio {
+        flex-direction: row;
+    }
+}
+
+@media (min-width:1440px) {
+    .intro img {
+        width: 700px;
+        height: 700px;
+    }
+}
