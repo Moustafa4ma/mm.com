@@ -19,7 +19,6 @@ body {
     min-height: 100vh;
     background-color: #eee;
 
-
 }
 
 .fa-caret-up {
@@ -27,7 +26,10 @@ body {
     bottom: 30px;
     right: 30px;
     font-size: 30px;
-    color: #2eaf7a;
+    background-image: linear-gradient(to right, #0b935a, #3fd0c9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     z-index: 3;
 }
 
