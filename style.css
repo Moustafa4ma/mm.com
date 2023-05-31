@@ -56,9 +56,10 @@ header {
 
 .logo {
     display: flex;
-    letter-spacing: 5px;
+    letter-spacing: -10px;
     font-size: 20px;
     color: #02353c;
+    font-family: 'Libre Baskerville', serif;
 }
 
 .nav {
@@ -298,6 +299,7 @@ form {
     text-decoration: none;
     color: #02353c;
     margin: 15px;
+    text-transform: capitalize;
 }
 
 
